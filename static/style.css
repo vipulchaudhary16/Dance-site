@@ -1,0 +1,171 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+#navbar{
+    background-color: rgb(86,61,124);
+    padding: 13px 14px;
+}
+
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+}
+
+#navbar li a{
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    padding: 5px 30px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+    /* text-shadow: 1.5px 1.5px red; */
+    
+}
+
+#logo{
+    display: flex;
+    /* color: white; */
+    align-items: center;
+    margin: 0 14px;
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+#logo img{
+    height: 27px;
+    /* filter: invert(1); */
+}
+
+#introSection{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height : 650px; */
+    height : 75vh;
+    padding-bottom: 40px;
+    background-color: yellow;
+    background: center/cover no-repeat url("/static/images/bg.jpg");
+}
+#introSection div.qoute{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#teacherSection
+{
+    /* height : 70%; */
+    /* background-color: rgb(172, 142, 202); */
+    background:  center/cover no-repeat url(../static/images/TechImg2.jpg);
+    
+}
+
+#teacherSection h2
+{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    text-shadow: 1px 1px rgb(192, 55, 55);
+    padding: 23px;
+}
+
+#teacherSection h3
+{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+}
+
+#teacher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teacher-card img
+{
+    height: 250px;
+}
+
+.teacher-card{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#missionSection{
+    margin-top: 25px;
+    height: auto;
+    background:  center/cover no-repeat url(../static/images/missImg2.jpg);
+}
+
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mission-card{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(78, 60, 60, 0.603);
+}
+
+
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+
+.card-img img{
+    height:inherit; 
+    
+}
+
+.copy{
+    margin-bottom: 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+}
+
+footer{
+    margin-bottom: 0;
+}
+
+@media(max-width:500px)
+{
+    #navbar{
+        border-color: black;
+    }
+
+    #introSection{
+        height: 50vh;
+    }
+}

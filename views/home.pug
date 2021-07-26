@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    
+
+    section#introSection
+        div.welcome|Welcome To Veer Dance Academy 
+        div.qoute|“Dance is the hidden language of the soul”
+
+    div#teacherSection
+        h2 Our Teachers
+        div#teacher
+          div.teacher-card #[img(src="../static/images/Tech1.png")]
+            h3 Katherin Langford
+          div.teacher-card #[img(src="../static/images/Tech3.png")]
+            h3 Shyaam deva
+          div.teacher-card #[img(src="../static/images/Tech2.png")]
+            h3 Alice jonasan
+        
+        div#missionSection
+          h2 Our Mission
+          div.mission
+            div.mission-card
+                h3 Soul dance
+                  div.card-box
+                    div.card-img
+                      img(src="/static/images/1.png")
+                    div.card-content
+                      p “If you hit a wall, climb over it, crawl under it, or dance on top of it.”
+            div.mission-card
+                h3 Garba
+                  div.card-box
+                    div.card-img
+                      img(src="/static/images/2.png")
+                    div.card-content
+                      p “Nobody cares if you can’t dance well. Just get up and dance. Great dancers are great because of their passion.”
+            div.mission-card
+                h3 Western dance
+                  div.card-box
+                    div.card-img
+                      img(src="/static/images/3.png")
+                    div.card-content
+                      p “The job of feets is walking, but their hobby is dancing.”
